@@ -1,0 +1,298 @@
+
+body {
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+}
+
+
+#wrapper {
+    background: url(img/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 5%;
+}
+
+.logo {
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.logo img{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.heading {
+    /* border: 1px solid blue; */
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.heading h2 {
+    font-size: 3em;
+    color: #fff;
+    margin: 0;
+}
+
+.heading p {
+    font-size: 2em;
+    color: #fff;
+}
+
+
+.wrapper-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#enter-section {
+    width: 50%;
+}
+
+
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+}
+
+h2, h3 {
+	font-family: "brandon-grotesque",sans-serif;
+}
+
+
+.center-content {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+
+
+#footer-bottom {
+	display: none;
+}
+
+
+#main-header {
+	display: none;
+}
+
+#page-container {
+	padding-top: 0!important;
+}
+
+
+
+
+
+
+
+/* enter section */
+#enter-section {
+	border-radius: 10px;
+    background: rgba(255,255,255,.9);
+    padding: 50px;
+    width: 40%;
+    text-align: center;
+    margin-right: 30px;
+    max-height: 330px;
+}
+
+#enter-section h3 {
+	font-size: 3em;
+	color: #333;
+}
+
+
+.enter-users {
+	margin-top: 10%;
+}
+
+.enter-users h2 {
+	font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+	color: #333;
+}
+
+input[type="text"] {
+	border: none;
+    width: 47%;
+    height: 40px;
+    border-radius: 5px;
+    background: #E2E2E2;
+    padding-left: 3%;
+    outline: none;
+}
+
+input[type="submit"] {
+	width: 50%;
+    margin-top: 2%;
+    background: #F15A2E;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background: #333;
+}
+
+
+
+
+/* timing display */
+.timing-display {
+	display: inline-block;
+    border-radius: 100%;
+    padding: 70px;
+    background: rgba(255,255,255,0.5);
+}
+
+
+
+/* users section */
+#users-section {
+	border-radius: 10px;
+    background: rgba(255,255,255,.9);
+    padding: 50px;
+    width:40%;
+}
+
+.tittle {
+	display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #333;
+}
+
+.list {
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.users-list {
+    margin-top: 5%;
+    
+}
+
+.user {
+	display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.user p {
+    background: #333;
+    border-radius: 5px 0 0 5px;
+	color: white;
+    padding: 10px 5px;
+    cursor: pointer;
+    width: 70%;
+}
+
+.user p:hover {
+    background:rgba(51,51,51,0.9);
+}
+
+.time {
+    margin: 0;
+}
+
+.user p.time {
+    width: 30%;
+	/* padding: 10px 20px; */
+    background: #F15A2E;
+    color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    text-align: center;
+}
+
+
+#template {
+	display:none;
+}
+
+
+@media(max-width: 980px) {
+    body {
+        overflow: visible;
+    }
+
+    .wrapper-content {
+        display: block;
+        width: 100%;
+        position: inherit;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    #enter-section {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+
+    #users-section {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #enter-section h3 {
+        font-size: 2em;
+    }
+    .enter-users h2 {
+        font-size: 1em;
+    }
+    #users-section {
+        width: 60%
+    }
+
+
+    input[type="text"]{
+        width: 97%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+
+}
+
+
+@media(max-width: 600px) {
+    .heading h2{ font-size: 2em; }
+    .heading p { font-size: 1em; }
+}
